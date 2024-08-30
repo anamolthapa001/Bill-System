@@ -1,0 +1,81 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #FFFAE3;  
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FFF4E1;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #FF5733;  
+    text-align: center;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #00539C; 
+}
+
+input[type="number"],
+select {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #FFBD69; 
+    background-color: #FFF;
+    font-size: 14px;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF6F61;  
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #FFF;  
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF5733;  
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #27AE60; 
+}
+
+.invoice {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #E3F2FD;  
+    border: 1px solid #BBDEFB; 
+}
+
+#invoice p {
+    font-size: 16px;
+    color: #333;
+}
+
+#printButton {
+    margin-top: 20px;
+    background-color: #FF6F61; 
+}

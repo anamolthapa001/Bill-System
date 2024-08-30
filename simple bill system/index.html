@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bill Calculator</h2>
+
+        <label for="oldReading">Enter old reading (units):</label>
+        <input type="number" id="oldReading" placeholder="Enter old reading">
+
+        <label for="newReading">Enter new reading (units):</label>
+        <input type="number" id="newReading" placeholder="Enter new reading">
+
+        <label for="oldDue">Enter old due amount (Rs):</label>
+        <input type="number" id="oldDue" placeholder="Enter old due amount">
+
+        <label for="paymentMethod">Select payment method:</label>
+        <select id="paymentMethod">
+            <option value="Cash">Cash</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+            <option value="Credit/Debit Card">Credit/Debit Card</option>
+            <option value="Mobile Payment">Mobile Payment</option>
+        </select>
+
+        <button onclick="calculateBill()">Calculate Bill</button>
+        <p id="result"></p>
+
+        <div id="invoice" class="invoice">
+            <!-- Invoice content will be dynamically generated here -->
+        </div>
+        <button id="printButton" onclick="printInvoice()" style="display:none;">Print Invoice</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
